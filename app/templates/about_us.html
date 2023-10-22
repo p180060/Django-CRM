@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<html>
+<head>
+	<title>About</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/1628952850894.jpeg' %}" >
+					<hr>
+					<h4>Hi I'm Shehryar Ali!</h4>
+					<p>I love coding, doing research and collaborating</p>
+				</div>
+			</div>
+
+			<div class="col-md-8">
+				<div class="card card-body h-100  border-info">
+                    <h2>Experience</h2>
+					<hr>
+                    <h5>Let’sGrowMore</h5>
+					<p>Worked with basics of HTML, CSS, and Javascript and performed different levels of tasks that were assigned.</p>
+                    <h5>Ptcl</h5>
+					<p>Worked with basics of PowerBi.</p>
+                    
+                    <ul class="social-links">
+                        <a href="https://github.com/p180060">
+						<li><img class="social" src="{% static 'images/25231.png' %}"></li>
+                        </a>
+                        <a href="https://linkedin.com/in/shehryar-ali-00a702175">
+						<li><img class="social" src="{% static 'images/linkedin.png' %}"></li>
+                        </a>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-col-md-10">
+				<div class="card card-body border-info">
+                    <h2>Projects</h4>
+                        <hr>
+                        <h5>AI Basketball Anaylser (FYP) </h4>(YoloV5, Media-Pipe, Pytorch, Flask, Python)
+                        
+                        <p>The primary objective of this project is to assist coaches in analyzing player shots, postures, and release
+                            angles. By employing MediaPipe, YOLOv5, and OpenCV, we examine the various shots attempted by
+                            players, providing valuable insights and analysis for coaches to improve player performance.</p>
+                        <hr>
+                        <h4>Point of sale</h4>
+                        (Xaml, Java, Sqlite)
+                        <p>In this project, we developed a Point of Sale (POS) app to assist shopkeepers in managing their inventory
+                            effectively. The app facilitates shopkeepers by providing features such as tracking available products,
+                            identifying missing items, and keeping track of remaining stock. The app incorporates a convenient barcode
+                            scanning feature, allowing users to add products to the system using their phone camera.</p>
+                        <hr>
+                        <h4>Music player</h4>
+                        (PHP, MYSQL, HTML, CSS)
+                        <p>This simple web project was developed using PHP, JavaScript, HTML, and CSS. The project allows users to
+                            upload their own songs..</p>
+                        
+					</div>
+			</div>
+        </div>
+        <br>
+        <div class="row">
+
+			<div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>TECHNICAL SKILLS</h5>
+					<hr>
+					<p>Python, Django, HTML/CSS, JavaScript/Jquery, React, Postgres, AWS and APIs such as google maps, JavaScript charts and a whole bunch more I can’t possibly mention in one sentence!</p>
+					<p>PS: Working on Node JS, Mongo DB and Machine Learning.</p>
+				</div>
+			</div>
+            <div class="col-md-6">
+				<div class="card card-body h-100">
+					<h5>COURSEWORK</h5>
+					<hr>
+                    AI
+                    <br>
+                    Cloud Computing
+                    <br>
+                    Python
+                    <br>
+                    Machine learning
+                    <br>
+                    Android Development
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			
+
+			<div class="col-md-12">
+				<div class="card card-body h-100">
+				<h4>CERTIFICATIONS</h4>
+				<hr>
+				<p>Scientific Computing with Python - FreeCodeCamp</p>
+                <p>Machine Learning with Python-Level 1 - IBM</p>
+                <p>Foundation: Data, Data, Everywhere(Google) - Coursera</p>
+                <p>Algorithms and Data Structures - FreeCodeCamp</p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+
+{% endblock %}
